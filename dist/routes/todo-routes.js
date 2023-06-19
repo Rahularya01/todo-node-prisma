@@ -7,6 +7,7 @@ const express_1 = require("express");
 const express_validator_1 = require("express-validator");
 const todo_controller_1 = __importDefault(require("../controllers/todo-controller"));
 const router = (0, express_1.Router)();
+// Get All Todos
 router.get("/", todo_controller_1.default.getTodos);
 router.get("/single/:id", todo_controller_1.default.getSingleTodo);
 router.post("/", [

@@ -3,7 +3,7 @@ import { body } from "express-validator";
 import todoController from "../controllers/todo-controller";
 
 const router = Router();
-
+// Get All Todos
 router.get("/", todoController.getTodos);
 
 router.get("/single/:id", todoController.getSingleTodo);
