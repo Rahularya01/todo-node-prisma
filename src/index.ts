@@ -12,6 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.status(200).send("Running Perfectly");
+});
+
 app.use("/todo", todoRoutes);
 
 app.listen(4000, () => {
